@@ -1,0 +1,118 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    min-height: 8vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(support.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    nav img {
+        width: 150px;
+    }
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+
+        .nav-links ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: ease-out;
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+
+
+
+.anxiety-sg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.anxiety-sg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.anxiety-support-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.anxiety-support-group span {
+    width: 60%;
+    align-items: center;
+    text-align: center;
+}
+div.fotot {
+    margin: 10px;
+   
+    float: left;
+    width: 295px;
+}
+
+
+    div.fotot img {
+        width: 100%;
+        height: auto;
+    }
+
+#Simptomat {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    #Simptomat td, #Simptomat th {
+        border: 1px solid;
+        padding: 10px;
+    }
+
+    #Simptomat th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #c493db;
+        color: black;
+    }

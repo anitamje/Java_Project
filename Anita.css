@@ -1,0 +1,121 @@
+body
+{
+    margin:0;
+    padding:0;
+    font-family:'Montserrat', sans-serif;
+
+}
+nav{
+	display: flex;
+	padding: 2% 6%; 
+	justify-content: space-between;
+    align-items: stretch;
+    background-color: rgb(126, 49, 126);
+
+}
+nav img {
+	width: 150px;	 
+} 
+.nav-links{
+	flex: 1;
+	text-align: right;
+
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: -moz-grid-line;
+	margin: auto;
+	transition: 0.5;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px;
+}
+.nav span{
+    margin-left: 20px;
+}
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction:column;
+}
+.kush-jemi-ne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.kush-jemi-ne span{
+    width: 60%;
+    align-items: center;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.card-img{
+    border-radius: 5px;
+}
+.cards.card{
+    width: 16rem;
+    margin: 20px;
+}
+.card p{
+    font-size: 14px;
+}
+.card-img:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+	transform: scale(2, 2);
+}
+.card-img1 {
+    width: 40%;
+    height: 12rem;
+    background-image: url(adhuresa.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+.card-img2 {
+    width: 40%;
+    height: 12rem;
+    background-image: url(ermali.png);
+    background-size: cover;
+    background-position: center center;
+}
+.card-img3 {
+    width: 40%;
+    height: 12rem;
+    background-image: url(anita.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.logo {
+    width: 10%;
+    height: 18.5vh;
+    background-image: url(logo_transparent.png);
+    background-size: cover;
+    background-position: center center;
+}

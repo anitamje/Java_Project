@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aktivitete</title>
+        <link rel="stylesheet"  href="aktivitete.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+       <script src="projekti.js"></script>
+     
+           <div class= "header">
+
+               <nav>
+                   <a href="index.html"> <abbr title="Support Groups Kosova"><img src="logo_transparent.png"> </abbr> </a>
+                   <div class="nav-links" id="navLinks">
+                       <ul>
+                                        <li> <a href="home.html"> HOME</a></li>
+					<li> <a href="Aktivitete.html"> AKTIVITETE</a></li>
+					<li> <a href="Depresioni.html"> DEPRESIONI</a></li>
+					<li> <a href="grupet.html"> GRUPET</a></li>
+                                        <li> <a href="A.html" > CONTACT</a></li>
+                       </ul>
+                   </div>
+               
+               </nav>
+           
+    </head>
+    <body>
+        <h1 id="titulli">Foto nga aktivitete te ndryshme </h1>
+
+            <div class="foto">
+               
+                <img id="foto3" src="foto3.jpeg" alt="">
+
+                <video autoplay muted>
+                    <source src="videoja2.mp4" type="video/mp4">
+                  </video>
+                <img id="foto1" src="foto1.jpeg" alt="">
+         
+                <img id="foto2" src="foto2.jpeg" alt="">
+
+                <video autoplay muted>
+                    <source src="videoja1.mp4" type="video/mp4">
+                  </video>
+
+                <img id="foto5" src="foto5.png" alt="">
+
+                <video autoplay muted>
+                    <source src="videoja3.mp4" type="video/mp4">
+                  </video>
+
+                <img  id="foto4" src="foto4.jpeg" alt="">
+
+                <video id="video4" controls >
+                    <source src="videoja4.mp4" type="video/mp4">
+                  </video>
+                </div>
+
+                <div class="pjesa2"> 
+           
+                </div>         
+<div class="Pjesa2">
+
+    <section class="grupet">
+        <h1>Si te qetesohemi nese kemi sulme ankthi?</h1>
+	
+<div class = "row">
+	<div class="grupet1">
+		<h3>1. Breathe</h3>
+		<p id="kontrollo">  When Yoore anxious or angry , you tend to take quick, shallow breaths. Dehorty says this sends a message to your brain, causing a positive feedback loop reinforcing your fight-or-flight response. That’s why taking long, deep calming breaths disrupts that loop and helps you calm down. </p>
+        <button type="button" onclick="Perkthimi1()">Perkthe ne shqip</button>
+
+        <script>
+       function Perkthimi1() {
+       document.getElementById("kontrollo").innerHTML = 
+       "Kur jeni të shqetësuar ose të zemëruar, keni tendencë të merrni frymë të shpejta dhe të cekëta. Dehorty thotë se kjo dërgon një mesazh në trurin tuaj, duke shkaktuar një lak reagimi pozitiv që përforcon përgjigjen tuaj lufta ose fluturimi. Kjo është arsyeja pse marrja e frymëmarrjeve qetësuese të gjata dhe të thella e prish atë lak dhe ju ndihmon të qetësoheni";}
+      
+    
+       </script>
+         <figcaption>Box breathing relaxation technique: <br>
+            <audio controls autoplay 
+                src="audio1.mp3">
+
+            </audio> </figcaption>
+    </div>
+	<div class="grupet1">
+		<h3>2. Challenge your thoughts</h3>
+		<p  id="demo1">Part of being anxious or angry is having , irrational thoughts that don’t necessarily make sense. These thoughts are often the “worse-case scenario.” You might find yourself caught in the “what if” cycle, which can cause you to sabotage a lot of things in your life.</p>
+        <button type="button" onclick="perkthimi2()">Perkthe ne shqip</button>
+        <script>
+            function perkthimi2() {
+       document.getElementById("demo1").innerHTML = 
+       "Një pjesë e të qenit i shqetësuar ose i zemëruar është të kesh mendime irracionale që nuk kanë domosdoshmërisht kuptim. Këto mendime janë shpesh skenari i rastit më të keq. Ju mund ta gjeni veten të kapur në ciklin po sikur, gjë që mund t'ju bëjë të sabotoni shumë gjëra në jetën tuaj.";}
+             </script>
+              <figcaption>5-Minute Meditation You Can Do Anywhere <br>
+                <audio controls autoplay 
+                    src="audio2.mp3">
+
+                </audio> </figcaption>
+	</div>
+	<div class="grupet1">
+		<h3>3. Release the anxiety or anger</h3>
+		<p id="demo2">  Dehorty recommends getting the emotional energy out with exercise. “Go for a walk or run. [Engaging] in some physical activity [releases] serotonin to help you calm down and feel better.” </p>
+        <button type="button" onclick="perkthimi3()">Perkthe ne shqip</button>
+        <script>
+            function perkthimi3() {
+       document.getElementById("demo2").innerHTML = 
+       " Dehorty rekomandon nxjerrjen e energjisë emocionale me stërvitje. “Shkoni për një shëtitje ose vraponi. [Angazhimi] në disa aktivitete fizike [lëshon] serotonin për t'ju ndihmuar të qetësoheni dhe të ndiheni më mirë.";}
+             </script>
+              <figcaption>How to stay calm under pressure <br>
+                <audio controls autoplay 
+                    src="audio3.mp3">
+
+                </audio> </figcaption>
+    </div>
+     </div>
+      </section>
+        </div>
+        
+ <script>
+                
+
+                            
+         let text = document.getElementById("kontrollo").innerHTML;
+          document.getElementById("kontrollo").innerHTML = text.replace(/ ,/g, ", ");
+         let text2 = document.getElementById("kontrollo").innerHTML; 
+          document.getElementById("kontrollo").innerHTML = text2.replace(/yoore/i, "you're ");
+
+</script>
+
+</div>
+</body>
+</html>
